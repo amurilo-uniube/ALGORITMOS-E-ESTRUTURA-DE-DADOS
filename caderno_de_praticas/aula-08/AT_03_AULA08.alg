@@ -1,14 +1,14 @@
-algoritmo "AT_02_AULA08"
+algoritmo "AT_03_AULA08"
 // Disciplina  : ALGORITMOS E ESTRUTURA DE DADOS
 // Professor   : PAULO LIMÍRIO DA SILVA
-// Descrição   : Calcula o IRRF para funcionários até o usuário digitar "ZERO".
+// Descrição   : Calcula o IRRF para 5 funcionários utilizando a estrutura de repetição PARA.
 // Autor(a)    : Antônio Murilo
 // Data atual  : 17/03/2025
 
 var
     name: caractere
     grossSalary, irrf, netSalary: real
-    answer: caractere
+    i: inteiro
 
 
 funcao calIRRF(salary: real): real
@@ -34,8 +34,7 @@ fimfuncao
 
 inicio
     
-    repita
-
+    para i de 1 ate 5 faca
         escreva("Digite o nome do funcionário: ")
         leia(name)
 
@@ -47,9 +46,6 @@ inicio
 
         escreval(name, ": Salário Bruto: R$", grossSalary:0:2, " | IRRF: R$", irrf:0:2, " | Salário Líquido: R$", netSalary:0:2)
 
-        escreva("Deseja continuar? Digite ZERO para encerrar ou qualquer outra tecla para continuar: ")
-        leia(answer)
-
-    ate answer = "ZERO"
+    fimpara
 
 fimalgoritmo

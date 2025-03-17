@@ -7,7 +7,7 @@ algoritmo "AT_01_AULA08"
 
 var
     name: caractere
-    gross_salary, irrf, net_salary: real
+    grossSalary, irrf, netSalary: real
     i: inteiro
 
 funcao calIRRF(salary: real): real
@@ -40,12 +40,12 @@ inicio
         leia(name)
 
         escreva("Digite o salário bruto do funcionário: ")
-        leia(gross_salary)
+        leia(grossSalary)
 
-        irrf := calIRRF(gross_salary)
-        net_salary := gross_salary - irrf
+        irrf := calIRRF(grossSalary)
+        netSalary := grossSalary - irrf
 
-        escreval(name, ": Salário Bruto: R$", gross_salary:0:2, " | IRRF: R$", irrf:0:2, " | Salário Líquido: R$", net_salary:0:2)
+        escreval(name, ": Salário Bruto: R$", grossSalary:0:2, " | IRRF: R$", irrf:0:2, " | Salário Líquido: R$", netSalary:0:2)
 
         i := i + 1
 
