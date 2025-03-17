@@ -6,7 +6,7 @@ algoritmo "AT_05_AULA02"
 // Data atual  : 17/03/2025
 
 var
-   p1, p2, p3, media: real
+   p1, p2, p3, average: real
 
 inicio
 
@@ -17,9 +17,9 @@ inicio
     escreva("Digite a nota da P3: ")
     leia(p3)
 
-    media := (p1 + p2 + p3) / 3
+    average := (p1 + p2 + p3) / 3
 
-    se media >= 7 entao
+    se average >= 7 entao
         escreva("Aluno aprovado")
     senao
         escreva("Aluno reprovado")
