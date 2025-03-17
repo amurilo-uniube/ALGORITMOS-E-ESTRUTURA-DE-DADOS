@@ -7,55 +7,58 @@ algoritmo "AT_02_AULA09"
 
 var
    vector1, vector2: vetor[1..4] de inteiro
-   i, j, count: inteiro
-   repeat: logico
+   i, j, y: inteiro
+   val: inteiro
+   isRepeated: logico
 
 inicio
 
-    count := 0
+    y := 0
 
+    escreval("Digite os valores do primeiro vetor:")
     para i de 1 ate 4 faca
-        repeat := falso
-        escreva("Primeiro Vetor - Valor 0", i, ": ")
-        leia(vector1[i])
-        
-        para j de 1 ate i-1 faca
-            se vector1[i] = vector1[j] entao
-                escreval("Erro! O valor ", vector1[i], " já foi informado. Digite um valor diferente.")
-                repeat := verdadeiro
-            fimse
-        fimpara
+        repita
+            isRepeated := falso
+            escreva("Primeiro Vetor - Valor ", i, ": ")
+            leia(val)
 
-        se repeat entao
-            i := i - 1
-        fimse
+            para j de 1 ate i-1 faca
+                se val = vector1[j] entao
+                    escreval("Erro! O val ", val, " já foi informado. Digite um val diferente.")
+                    isRepeated := verdadeiro
+                fimse
+            fimpara
+        ate nao isRepeated
+        vector1[i] := val
     fimpara
 
+    escreval("Digite os valores do segundo vetor:")
     para i de 1 ate 4 faca
-        repeat := falso
-        escreva("Segundo Vetor - Valor 0", i, ": ")
-        leia(vector2[i])
+        repita
+            isRepeated := falso
+            escreva("Segundo Vetor - Valor ", i, ": ")
+            leia(val)
 
-        para j de 1 ate i-1 faca
-            se vector2[i] = vector2[j] entao
-                escreval("Erro! O valor ", vector2[i], " já foi informado. Digite um valor diferente.")
-                repeat := verdadeiro
-            fimse
-        fimpara
-
-        se repeat entao
-            i := i - 1
-        fimse
+            para j de 1 ate i-1 faca
+                se val = vector2[j] entao
+                    escreval("Erro! O val ", val, " já foi informado. Digite um val diferente.")
+                    isRepeated := verdadeiro
+                fimse
+            fimpara
+        ate nao isRepeated
+        vector2[i] := val
     fimpara
 
     para i de 1 ate 4 faca
         para j de 1 ate 4 faca
             se vector1[i] = vector2[j] entao
-                count := count + 1
+                y := y + 1
+                vector2[j] := -999 
+                interrompa 
             fimse
         fimpara
     fimpara
 
-    escreval("Quantidade de números iguais entre os dois vetores: ", count)
+    escreval("Quantidade de números iguais entre os dois vetores: ", y)
 
 fimalgoritmo
