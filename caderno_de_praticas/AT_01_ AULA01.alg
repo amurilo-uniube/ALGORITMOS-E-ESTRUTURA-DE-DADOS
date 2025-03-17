@@ -1,4 +1,4 @@
-algoritmo "Entrada de Dados"
+algoritmo "AT_01_AULA01"
 // Disciplina  : ALGORITMOS E ESTRUTURA DE DADOS
 // Professor   : PAULO LIMÍRIO DA SILVA
 // Descrição   : Solicita nome, idade, email, cidade e profissão, limpa a tela e exibe os dados
