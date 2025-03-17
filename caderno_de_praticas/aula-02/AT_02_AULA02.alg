@@ -15,9 +15,8 @@ inicio
     leia(age)
 
     se age >= 18 entao
-        escreva("Você é maior de idade.")
-    senao
-        escreva("Você é menor de idade.")
+        escreval("Sua idade: ", age)
+        escreval("Você é maior de idade.")
     fimse
 
 fimalgoritmo

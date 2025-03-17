@@ -1,4 +1,4 @@
-algoritmo "AT_01_AULA02"
+algoritmo "AT_02_AULA01"
 // Disciplina  : ALGORITMOS E ESTRUTURA DE DADOS
 // Professor   : PAULO LIMÍRIO DA SILVA
 // Descrição   : Troca os valores entre as variáveis X e Y e exibe os resultados

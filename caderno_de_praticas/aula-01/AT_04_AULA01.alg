@@ -1,4 +1,4 @@
-algoritmo "AT_01_AULA04"
+algoritmo "AT_04_AULA01"
 // Disciplina  : ALGORITMOS E ESTRUTURA DE DADOS
 // Professor   : PAULO LIMÍRIO DA SILVA
 // Descrição   : Lê a idade de uma pessoa em anos, calcula a idade em meses e dias, limpa a tela e mostra as informações
