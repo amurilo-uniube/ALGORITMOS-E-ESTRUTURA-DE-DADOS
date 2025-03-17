@@ -1,0 +1,3 @@
+- Curso: Inteligência Artificial e Ciência de Dados
+- Disciplina: ALGORITMOS E ESTRUTURA DE DADOS
+- Professor: PAULO LIMÍRIO DA SILVA
