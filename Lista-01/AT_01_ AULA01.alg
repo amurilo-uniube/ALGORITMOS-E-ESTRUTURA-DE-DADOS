@@ -3,7 +3,7 @@ algoritmo "Entrada de Dados"
 // Professor   : PAULO LIMÍRIO DA SILVA
 // Descrição   : Solicita nome, idade, email, cidade e profissão, limpa a tela e exibe os dados
 // Autor(a)    : Antônio Murilo
-// Data atual  : 17/03/2024
+// Data atual  : 17/03/2025
 
 var
     name, email, city, occupation: caractere
