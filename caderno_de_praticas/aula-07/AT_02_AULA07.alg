@@ -70,6 +70,6 @@ inicio
             escreval("Classificação: Obesidade Grau III")
       fimescolha
 
-      escreval("IMC: ", bmi)
+      escreval("IMC: ", bmi:0:2)
    
 fimalgoritmo

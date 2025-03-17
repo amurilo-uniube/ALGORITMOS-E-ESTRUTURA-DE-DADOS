@@ -35,9 +35,9 @@ inicio
         commissionPercentage := 9.6
     fimse
     
-    escreval("Total vendido: R$ ", totalSales)
-    escreval("Média de vendas: R$ ", averageSales)
-    escreval("Comissão a ser recebida: R$ ", commission)
+    escreval("Total vendido: R$ ", totalSales:0:2)
+    escreval("Média de vendas: R$ ", averageSales:0:2)
+    escreval("Comissão a ser recebida: R$ ", commission:0:2)
     escreval("Porcentagem da comissão: ", commissionPercentage, "%" )
 
 fimalgoritmo
